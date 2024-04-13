@@ -1,3 +1,6 @@
 [submodule "Linux-Optimizer"]
 	path = Linux-Optimizer
 	url = git@github.com:hawshemi/Linux-Optimizer.git
+[submodule "VPS-Optimizer"]
+	path = VPS-Optimizer
+	url = git@github.com:opiran-club/VPS-Optimizer.git
