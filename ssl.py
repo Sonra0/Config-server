@@ -32,3 +32,8 @@ def takessl():
         print("\ncommand5 was successful\n")
     else:
         print("\nunable to do command5\n")
+    enable_process = subprocess.run(['sudo', "ufw", 'enable'])
+    if enable_process.returncode == 0:
+        print("\nufw enabled successful\n")
+    else:
+        print("\nunable to enable ufw\n")
