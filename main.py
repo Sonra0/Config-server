@@ -1,7 +1,7 @@
 import subprocess
 import sys
 from ufwset import ufwrun
-
+from ssl import takessl
 def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
@@ -13,6 +13,7 @@ if __name__ == '__main__':
         print("5. install mhsanaei")
         print("6. config ufw")
         print("7. change ssh port")
+        print("8. take ssl")
         print("0. exit")
         print("\nenter your number:",end=" ")
         num = int(input())
@@ -72,5 +73,7 @@ if __name__ == '__main__':
             else:
                 print("\nchmod failed\n")
             run_process = subprocess.run(['bash', "./ssh_edit/change-ssh-port.sh"])
+        if num == 8 :
+            takessl()
         if num == 0:
             break
