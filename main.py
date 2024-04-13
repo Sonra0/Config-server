@@ -8,6 +8,7 @@ if __name__ == '__main__':
         print("2. Linux OPIRAN optimizer ")
         print("3. chisel tunnel ")
         print("4. rathole tunnel ")
+        print("5. install mhsanaei")
         print("0. exit")
         print("\nenter your number:",end=" ")
         num = int(input())
@@ -33,5 +34,10 @@ if __name__ == '__main__':
                 subprocess.run(['bash', "./Rathole_reverseTunnel/go.sh"])
             if num2 == 0 :
                 continue
+        if num == 5 :
+            print("enter your version:( example: 2.2.1 ):",end=' ')
+            version = 'v'+input()
+            subprocess.run(['bash', "./3x-ui/install.sh",version ])
+
         if num == 0:
             break
