@@ -13,11 +13,19 @@ if __name__ == '__main__':
         print("\nenter your number:",end=" ")
         num = int(input())
         if num == 1:
-            subprocess.run(["chmod", '+x', '/Linux-Optimizer/linux-optimizer.sh'])
-            subprocess.run(['bash',"./Linux-Optimizer/linux-optimizer.sh"])
+            chmod_process = subprocess.run(["chmod", '+x', '/Linux-Optimizer/linux-optimizer.sh',],capture_output=True, text=True)
+            if chmod_process.returncode == 0:
+                print("\nchmod successful.\n")
+            else:
+                print("\nchmod failed\n")
+            run_process = subprocess.run(['bash',"./Linux-Optimizer/linux-optimizer.sh"])
         if num == 2:
-            subprocess.run(["chmod", '+x', '/VPS-Optimizer/optimizer.sh'])
-            subprocess.run(['bash', "./VPS-Optimizer/optimizer.sh"])
+            chmod_process = subprocess.run(["chmod", '+x', '/VPS-Optimizer/optimizer.sh'],capture_output=True, text=True)
+            if chmod_process.returncode == 0:
+                print("\nchmod successful.\n")
+            else:
+                print("\nchmod failed\n")
+            run_process = subprocess.run(['bash', "./VPS-Optimizer/optimizer.sh"])
         if num == 3:
             chisel()
         if num ==4 :
@@ -27,17 +35,29 @@ if __name__ == '__main__':
             print("\nenter your number:",end=" ")
             num2=int(input())
             if num2 == 1 :
-                subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/install.sh'])
-                subprocess.run(['bash', "./Rathole_reverseTunnel/install.sh"])
+                chmod_process = subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/install.sh'],capture_output=True, text=True)
+                if chmod_process.returncode == 0:
+                    print("\nchmod successful.\n")
+                else:
+                    print("\nchmod failed\n")
+                run_process = subprocess.run(['bash', "./Rathole_reverseTunnel/install.sh"])
             if num2 == 2 :
-                subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/go.sh'])
-                subprocess.run(['bash', "./Rathole_reverseTunnel/go.sh"])
+                chmod_process = subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/go.sh'],capture_output=True, text=True)
+                if chmod_process.returncode == 0:
+                    print("\nchmod successful.\n")
+                else:
+                    print("\nchmod failed\n")
+                run_process = subprocess.run(['bash', "./Rathole_reverseTunnel/go.sh"])
             if num2 == 0 :
                 continue
         if num == 5 :
             print("enter your version:( example: 2.2.1 ):",end=' ')
             version = 'v'+input()
-            subprocess.run(['bash', "./3x-ui/install.sh",version ])
-
+            chmod_process = subprocess.run(["chmod", '+x', './3x-ui/install.sh'], capture_output=True,text=True)
+            if chmod_process.returncode == 0:
+                print("\nchmod successful.\n")
+            else:
+                print("\nchmod failed\n")
+            run_process = subprocess.run(['bash', "./3x-ui/install.sh",version ])
         if num == 0:
             break
