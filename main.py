@@ -14,5 +14,8 @@ while True :
     if num == 2:
         subprocess.run(["chmod", '+x', '/VPS-Optimizer/optimizer.sh'])
         subprocess.run(['bash', "./VPS-Optimizer/optimizer.sh"])
+    if num == 3:
+        subprocess.run(["chmod", '+x', '/Chisel_multipleServers/chisel.py'])
+        subprocess.run(['python3', "/Chisel_multipleServers/chisel.py"])
     if num == 0:
         break
