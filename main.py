@@ -13,7 +13,7 @@ if __name__ == '__main__':
         print("5. install mhsanaei")
         print("6. config ufw")
         print("7. change ssh port")
-        print("8. take ssl")
+        print("8. ssl certificate")
         print("0. exit")
         print("\nenter your number:",end=" ")
         num = int(input())
