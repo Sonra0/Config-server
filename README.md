@@ -33,4 +33,5 @@ to take ssh key :
 5 - add the key to your github account
 
 ## then :
-sudo apt-get -y install git && sudo git clone --recurse-submodules git@github.com:Sonra0/Config-server.git && cd Config-server && python3 main.py
+
+sudo apt-get -y install git && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
