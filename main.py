@@ -67,12 +67,12 @@ if __name__ == '__main__':
         if num == 6 :
             ufwrun()
         if num == 7 :
-            chmod_process = subprocess.run(["chmod", '+x', './ssh_edit/change-ssh-port.sh'], capture_output=True, text=True)
+            chmod_process = subprocess.run(["chmod", '+x', 'change-ssh-port.sh'], capture_output=True, text=True)
             if chmod_process.returncode == 0:
                 print("\nchmod successful.\n")
             else:
                 print("\nchmod failed\n")
-            run_process = subprocess.run(['bash', "./ssh_edit/change-ssh-port.sh"])
+            run_process = subprocess.run(['bash', "change-ssh-port.sh"])
         if num == 8 :
             takessl()
         if num == 0:
