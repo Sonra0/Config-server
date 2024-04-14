@@ -45,3 +45,6 @@ def ufwrun():
         print("\nauto start enabled\n")
     else :
         print("\nunable to auto start!\n")
+    status_process = subprocess.run(["sudo", "ufw", "status"])
+    if status_process.returncode != 0:
+        print("\nunable to show status!\n")
