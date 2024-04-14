@@ -38,7 +38,7 @@ def takessl():
         print("\ncommand4 was successful\n")
     else:
         print("\nunable to do command4\n")
-    command5_process = subprocess.run(['sudo', "/root/.acme.sh/acme.sh", '--installcert', '-d', domain, "--key-file","/root/private.key","--fullchain-file","/root/cer>
+    command5_process = subprocess.run(['sudo', "/root/.acme.sh/acme.sh", '--installcert', '-d', domain, "--key-file","/root/private.key","--fullchain-file","/root/cert">
     if command5_process.returncode == 0 :
         print("\ncommand5 was successful\n")
     else:
