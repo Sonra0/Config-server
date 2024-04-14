@@ -5,7 +5,12 @@ def takessl():
         print("\nufw disabled successful\n")
     else:
         print("\nunable to disable ufw\n")
-    curl_process = subprocess.run(['sudo', "apt-get", '-y', 'install', 'curl'])
+    update_process = subprocess.run(['sudo', "apt", 'update'])
+    if update_process.returncode == 0 :
+        print("\nUpdate successful\n")
+    else:
+        print("\nunable to Update\n")
+    curl_process = subprocess.run(['sudo', "apt", 'install', 'curl', 'socat','-y'])
     if curl_process.returncode == 0 :
         print("\ncurl installed successful\n")
     else:
