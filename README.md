@@ -19,16 +19,18 @@ The things you need before run the script.
 
 A step by step guide that will tell you how to get the development environment up and running.
 
+> make sure you are root !
+```bash
+apt-get -y install git
+sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git
+cd Config-server
+python3 main.py
 ```
- make sure you are root !
-$ apt-get -y install git
-$ sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git
-$ cd Config-server
-$ python3 main.py
-```
+
 ### run by 1 command : 
-```
-$ sudo apt-get -y install git && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
+
+```bash
+sudo apt-get -y install git && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
 ```
 
 ## Usage
