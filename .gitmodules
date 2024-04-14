@@ -4,3 +4,6 @@
 [submodule "VPS-Optimizer"]
 	path = VPS-Optimizer
 	url = git@github.com:opiran-club/VPS-Optimizer.git
+[submodule "3x-ui"]
+	path = 3x-ui
+	url = git@github.com:MHSanaei/3x-ui.git
