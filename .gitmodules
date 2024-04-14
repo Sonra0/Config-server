@@ -7,3 +7,9 @@
 [submodule "3x-ui"]
 	path = 3x-ui
 	url = git@github.com:MHSanaei/3x-ui.git
+[submodule "Chisel_multipleServers"]
+	path = Chisel_multipleServers
+	url = git@github.com:Azumi67/Chisel_multipleServers.git
+[submodule "Rathole_reverseTunnel"]
+	path = Rathole_reverseTunnel
+	url = git@github.com:Azumi67/Rathole_reverseTunnel.git
