@@ -5,6 +5,11 @@ def takessl():
         print("\nufw disabled successful\n")
     else:
         print("\nunable to disable ufw\n")
+    curl_process = subprocess.run(['sudo', "apt-get", '-y', 'install', 'curl'])
+    if curl_process.returncode == 0 :
+        print("\ncurl installed successful\n")
+    else:
+        print("\nunable to install curl !\n")
     command1_process = subprocess.run(['sudo', "curl", 'https://get.acme.sh','|','sh'])
     if command1_process.returncode == 0 :
         print("\ncommand1 was successful\n")
