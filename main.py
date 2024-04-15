@@ -6,6 +6,7 @@ def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
     while True :
+        subprocess.run(['curl', "-s","https://raw.githubusercontent.com/shinya/pokemon-terminal-art/main/256color/silver/001.txt"])
         print("\n1. Linux Hawshemi optimizer ")
         print("2. Linux OPIRAN optimizer ")
         print("3. chisel tunnel ")
