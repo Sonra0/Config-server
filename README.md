@@ -2,7 +2,7 @@
 
 You can have many packages to optimize your linux server and config vpn tunnel and tools. 
 
-![photo](https://github.com/Sonra0/Config-server/blob/master/screen.png)
+![test](https://github.com/Sonra0/Config-server/blob/master/screen.png)
 
 ## Getting Started
 
@@ -47,6 +47,7 @@ install Mhsanaei x-ui
 install and config tunnels like rathole and chisel from Azumi
 linux optimizers
 ufw install and setup
+```
 change your ssh port
 ```
 ## I used below repositories in my script :
