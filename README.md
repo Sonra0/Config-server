@@ -2,6 +2,8 @@
 
 You can have many packages to optimize your linux server and config vpn tunnel and tools. 
 
+![photo](https://github.com/Sonra0/Config-server/blob/master/screen.png)
+
 ## Getting Started
 
 you can clone this project in your system and don't forget to do 'git submodule init' and 'git submodule update' . 
