@@ -47,9 +47,9 @@ install Mhsanaei x-ui
 install and config tunnels like rathole and chisel from Azumi
 linux optimizers
 ufw install and setup
-```
 change your ssh port
 ```
+
 ## I used below repositories in my script :
 * [Rathole](https://github.com/Azumi67/Rathole_reverseTunnel)
 * [Chisel](https://github.com/Azumi67/Chisel_multipleServers)
