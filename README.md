@@ -43,14 +43,16 @@ A few examples of useful tasks.
 
 ```
 SSL certificate
-install Mhsanaei x-ui
-install and config tunnels like rathole and chisel from Azumi
-linux optimizers
-ufw install and setup
-change your ssh port
+Install Mhsanaei x-ui
+Install Alireza x-ui
+Install and config tunnels like Rathole and Chisel from Azumi
+Linux optimizers
+UFW install and setup
+Change your SSH port
 ```
 
 ## I used below repositories in my script :
+* [Alireza panel](https://github.com/alireza0/x-ui)
 * [Rathole](https://github.com/Azumi67/Rathole_reverseTunnel)
 * [Chisel](https://github.com/Azumi67/Chisel_multipleServers)
 * [ssh_change_port](https://gist.github.com/worldadventurer/842f1a10762cba0ce27dc8f99a835377)
