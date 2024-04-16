@@ -2,7 +2,7 @@
 
 You can have many packages to optimize your linux server and config vpn tunnel and tools. 
 
-![test](https://github.com/Sonra0/Config-server/blob/master/screen.png)
+![photo](https://github.com/Sonra0/Config-server/blob/master/screen.png)
 
 ## Getting Started
 
