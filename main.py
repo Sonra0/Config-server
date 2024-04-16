@@ -2,6 +2,7 @@ import subprocess
 import sys
 from ufwset import ufwrun
 from ssl import takessl
+from firewall_iran import firewall
 def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
@@ -13,6 +14,7 @@ if __name__ == '__main__':
         print("4. Config UFW")
         print("5. Change SSH port")
         print("6. SSL certificate")
+        print("7. Iran firewall")
         print("0. Exit")
         print("\nEnter your number:",end=" ")
         num = int(input())
@@ -102,5 +104,7 @@ if __name__ == '__main__':
             run_process = subprocess.run(['bash', "change-ssh-port.sh"])
         if num == 6 :
             takessl()
+        if num == 7 :
+            firewall()
         if num == 0:
             break
