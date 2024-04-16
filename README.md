@@ -2,6 +2,8 @@
 
 You can have many packages to optimize your linux server and config vpn tunnel and tools. 
 
+![test](https://github.com/Sonra0/Config-server/blob/master/screen.png)
+
 ## Getting Started
 
 you can clone this project in your system and don't forget to do 'git submodule init' and 'git submodule update' . 
@@ -13,6 +15,7 @@ The things you need before run the script.
 
 * you have to run as root
 * install git
+* install curl
 * install python3
 
 ### Installation
@@ -22,6 +25,7 @@ A step by step guide that will tell you how to get the development environment u
 > make sure you are root !
 ```bash
 apt-get -y install git
+apt-get install curl
 sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git
 cd Config-server
 python3 main.py
@@ -30,7 +34,7 @@ python3 main.py
 ### run by 1 command : 
 
 ```bash
-sudo apt-get -y install git && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
+sudo apt-get -y install git && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
 ```
 
 ## Usage
@@ -38,13 +42,14 @@ sudo apt-get -y install git && sudo git clone --recurse-submodules https://githu
 A few examples of useful tasks.
 
 ```
-get ssl
+SSL certificate
 install Mhsanaei x-ui
 install and config tunnels like rathole and chisel from Azumi
 linux optimizers
 ufw install and setup
 change your ssh port
 ```
+
 ## I used below repositories in my script :
 * [Rathole](https://github.com/Azumi67/Rathole_reverseTunnel)
 * [Chisel](https://github.com/Azumi67/Chisel_multipleServers)
