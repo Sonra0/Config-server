@@ -13,3 +13,6 @@
 [submodule "Rathole_reverseTunnel"]
 	path = Rathole_reverseTunnel
 	url = https://github.com/Azumi67/Rathole_reverseTunnel.git
+[submodule "x-ui"]
+	path = x-ui
+	url = https://github.com/alireza0/x-ui.git

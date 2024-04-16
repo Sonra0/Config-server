@@ -72,6 +72,7 @@ if __name__ == '__main__':
                 continue
         if num == 3 :
             print("\n1. Mhsanaei")
+            print("2. Alireza")
             print("0. Exit")
             print("\nEnter your number:",end=" ")
             num2 = int(input())
@@ -84,6 +85,10 @@ if __name__ == '__main__':
                 else:
                     print("\nchmod failed\n")
                 run_process = subprocess.run(['bash', "./3x-ui/install.sh",version ])
+            if num2 == 2 :
+                print("enter your version:( example: 2.2.1 ):", end=' ')
+                version = input()
+                run_process = subprocess.run(['bash',"./x-ui/install.sh" , version])
             if num2 == 0 :
                 continue
         if num == 4 :
