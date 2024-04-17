@@ -4,7 +4,7 @@ import shutil
 def firewall():
     os.chdir('/root/')
     try :
-        shutil.rmtree('/root/iptables_rules/ > /dev/null')
+        shutil.rmtree('/root/iptables_rules/', ignore_errors=True)
     finally:
         os.mkdir("iptables_rules")
         os.chdir('/root/iptables_rules')
