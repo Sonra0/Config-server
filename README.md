@@ -38,20 +38,24 @@ python3 main.py
 cd /root/ && sudo apt-get -y install git && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
 ```
 
-## Usage
+## A few examples of useful tasks :
 
-A few examples of useful tasks.
+- #### Iran firewall : ignore all requests from anywhere except from iran and your white ip list ( your destination server and etc. )
 
-```
-SSL certificate
-Install Mhsanaei x-ui
-Install Alireza x-ui
-Install and config tunnels like Rathole and Chisel from Azumi
-Linux optimizers
-UFW install and setup
-Change your SSH port
-Iran firewall : ignore all requests from anywhere except from iran and your white ip list ( your destination server and etc. )
-```
+- SSL certificate
+
+- Install Mhsanaei x-ui
+
+- Install Alireza x-ui
+
+- Install and config tunnels like Rathole and Chisel from Azumi
+
+- Linux optimizers
+
+- UFW install and setup
+
+- Change your SSH port
+
 
 ## I used below repositories in my script :
 * [Alireza panel](https://github.com/alireza0/x-ui)
