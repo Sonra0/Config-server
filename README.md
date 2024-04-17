@@ -35,7 +35,12 @@ python3 main.py
 ### run by 1 command : 
 
 ```bash
-cd /root/ && sudo apt-get -y install git && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
+cd /root/ && sudo apt-get -y install git && sudo apt-get -y install python3 && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
+```
+
+### After it's installed for the first time you can run it by :
+```bash
+cd /root/Config-server/ && python3 main.py
 ```
 
 ## A few examples of useful tasks :
