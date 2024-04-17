@@ -23,6 +23,7 @@ The things you need before run the script.
 A step by step guide that will tell you how to get the development environment up and running.
 
 > make sure you are root !
+> do all commands in /root/ !
 ```bash
 apt-get -y install git
 apt-get install curl
@@ -34,7 +35,7 @@ python3 main.py
 ### run by 1 command : 
 
 ```bash
-sudo apt-get -y install git && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
+cd /root/ && sudo apt-get -y install git && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
 ```
 
 ## Usage
@@ -49,6 +50,7 @@ Install and config tunnels like Rathole and Chisel from Azumi
 Linux optimizers
 UFW install and setup
 Change your SSH port
+Iran firewall : ignore all requests from anywhere except from iran and your white ip list ( your destination server and etc. )
 ```
 
 ## I used below repositories in my script :
