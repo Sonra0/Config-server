@@ -1,7 +1,7 @@
 import subprocess
 import os
 import shutil
-def backup():
+def backup_do():
     os.chdir('/root/')
     try :
         shutil.rmtree('/root/backup-xui/', ignore_errors=True)
