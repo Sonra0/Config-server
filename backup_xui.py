@@ -8,6 +8,7 @@ def backup_do():
     finally:
         os.mkdir("/root/backup-xui/")
         shutil.copyfile("/root/Config-server/backup.py", "/root/backup-xui/backup.py")
+        subprocess.run(["python3", "/root/Config-server/data.py"])
         shutil.copyfile("/root/Config-server/data.py", "/root/backup-xui/data.py")
         subprocess.run(["apt", '-y', 'update'])
         subprocess.run(["apt", 'install', 'python3'])
