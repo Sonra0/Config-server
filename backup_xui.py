@@ -6,21 +6,9 @@ def backup_do():
     try :
         shutil.rmtree('/root/backup-xui/', ignore_errors=True)
     finally:
-        return_code = os.mkdir("/root/backup-xui/")
-        if return_code == 0 :
-            print("\n/root/backup-xui/ file created !")
-        else :
-            print("\nunable to create /root/backup-xui/")
-        return_code = shutil.copyfile("/root/Config-server/backup.py", "/root/backup-xui/backup.py")
-        if return_code == 0 :
-            print("\n/root/Config-server/backup.py copied !")
-        else :
-            print("\nunable to copy /root/Config-server/backup.py")
-        return_code = shutil.copyfile("/root/Config-server/data.py", "/root/backup-xui/data.py")
-        if return_code == 0 :
-            print("\n/root/Config-server/data.py copied !")
-        else :
-            print("\nunable to copy /root/Config-server/data.py")
+        os.mkdir("/root/backup-xui/")
+        shutil.copyfile("/root/Config-server/backup.py", "/root/backup-xui/backup.py")
+        shutil.copyfile("/root/Config-server/data.py", "/root/backup-xui/data.py")
         p1 = subprocess.run(["apt", '-y', 'update'])
         if p1.returncode == 0 :
             print("\napt update done")
