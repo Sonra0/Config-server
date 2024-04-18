@@ -4,6 +4,7 @@ from ufwset import ufwrun
 from ssl import takessl
 from backup_xui import backup_do
 from firewall_iran import firewall
+from nameserver import dns
 def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
@@ -16,7 +17,8 @@ if __name__ == '__main__':
         print("5. Change SSH port")
         print("6. SSL certificate")
         print("7. Iran firewall")
-        print("8. backup")
+        print("8. Backup")
+        print("9. Change NameServer")
         print("0. Exit")
         print("\nEnter your number:",end=" ")
         num = int(input())
@@ -110,5 +112,7 @@ if __name__ == '__main__':
             firewall()
         if num == 8 :
             backup_do()
+        if num == 9 :
+            dns()
         if num == 0:
             break
