@@ -12,7 +12,7 @@ def backup_do():
         subprocess.run(["apt", 'install', 'python3'])
         subprocess.run(["apt", 'install', 'cron'])
         subprocess.run(["apt", 'install', 'python3-pip'])
-        subprocess.run(["apt", 'install', 'pyTelegramBotAPI'])
+        subprocess.run(["pip", 'install', 'pyTelegramBotAPI'])
         print("\nEnter your telegram bot token :",end="")
         token = input()
         print("\nEnter your telegram account chat id :", end="")
