@@ -22,27 +22,27 @@ def backup_do():
         else :
             print("\nunable to copy /root/Config-server/data.py")
         p1 = subprocess.run(["apt", '-y', 'update'])
-        if p1.returncode = 0 :
+        if p1.returncode == 0 :
             print("\napt update done")
         else :
             print("\nunable to do update")
         p1 = subprocess.run(["apt", 'install', 'python3'])
-        if p1.returncode = 0 :
+        if p1.returncode == 0 :
             print("\npython3 installed")
         else :
             print("\nunable to install python3")
         p1 = subprocess.run(["apt", 'install', 'cron'])
-        if p1.returncode = 0 :
+        if p1.returncode == 0 :
             print("\ncron installed")
         else :
             print("\nunable to install cron")
         p1 = subprocess.run(["apt", 'install', 'python3-pip'])
-        if p1.returncode = 0 :
+        if p1.returncode == 0 :
             print("\npython3-pip installed")
         else :
             print("\nunable to install python3-pip")
         p1 = subprocess.run(["pip", 'install', 'pyTelegramBotAPI'])
-        if p1.returncode = 0 :
+        if p1.returncode == 0 :
             print("download pyTelegramBotAPI done")
         else :
             print("unable to download pyTelegramBotAPI")
