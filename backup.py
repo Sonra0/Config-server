@@ -1,7 +1,7 @@
 import telebot
 import shutil
-from backup_xui import token
-from backup_xui import chat_id
+from data import token
+from data import chat_id
 TOKEN = token
 RECEIVER_ID = chat_id
 FILE_PATH = '/etc/x-ui/x-ui.db'
