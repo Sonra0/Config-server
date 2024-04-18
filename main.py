@@ -2,6 +2,7 @@ import subprocess
 import sys
 from ufwset import ufwrun
 from ssl import takessl
+from backup-xui import backup
 def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
