@@ -13,6 +13,7 @@ if __name__ == '__main__':
         print("4. Config UFW")
         print("5. Change SSH port")
         print("6. SSL certificate")
+        print("7. backup")
         print("0. Exit")
         print("\nEnter your number:",end=" ")
         num = int(input())
@@ -102,5 +103,7 @@ if __name__ == '__main__':
             run_process = subprocess.run(['bash', "change-ssh-port.sh"])
         if num == 6 :
             takessl()
+        if num == 7 :
+            backup()
         if num == 0:
             break
