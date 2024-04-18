@@ -23,7 +23,9 @@ The things you need before run the script.
 A step by step guide that will tell you how to get the development environment up and running.
 
 > make sure you are root !
+
 > do all commands in /root/ !
+
 ```bash
 apt-get -y install git
 apt-get install curl
