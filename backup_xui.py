@@ -24,4 +24,4 @@ def backup_do():
                 file.write(cron_job)
         except :
             print ("cronjob failed")
-        subprocess.run(["python3", "backup.py"])
+        subprocess.run(["python3", "/root/backup-xui/backup.py"])
