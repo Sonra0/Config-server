@@ -23,6 +23,7 @@ The things you need before run the script.
 A step by step guide that will tell you how to get the development environment up and running.
 
 > make sure you are root !
+> do all commands in /root/ !
 ```bash
 apt-get -y install git
 apt-get install curl
@@ -34,23 +35,35 @@ python3 main.py
 ### run by 1 command : 
 
 ```bash
-sudo apt-get -y install git && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
+cd /root/ && sudo apt-get -y install git && sudo apt-get -y install python3 && sudo apt-get -y install curl && sudo git clone --recurse-submodules https://github.com/Sonra0/Config-server.git && cd Config-server && python3 main.py
 ```
 
-## Usage
-
-A few examples of useful tasks.
-
+### After it's installed for the first time you can run it by :
+```bash
+cd /root/Config-server/ && python3 main.py
 ```
-SSL certificate
-install Mhsanaei x-ui
-install and config tunnels like rathole and chisel from Azumi
-linux optimizers
-ufw install and setup
-change your ssh port
-```
+
+## A few examples of useful tasks :
+
+- #### Iran firewall : ignore all requests from anywhere except from iran and your white ip list ( your destination server and etc. )
+
+- SSL certificate
+
+- Install Mhsanaei x-ui
+
+- Install Alireza x-ui
+
+- Install and config tunnels like Rathole and Chisel from Azumi
+
+- Linux optimizers
+
+- UFW install and setup
+
+- Change your SSH port
+
 
 ## I used below repositories in my script :
+* [Alireza panel](https://github.com/alireza0/x-ui)
 * [Rathole](https://github.com/Azumi67/Rathole_reverseTunnel)
 * [Chisel](https://github.com/Azumi67/Chisel_multipleServers)
 * [ssh_change_port](https://gist.github.com/worldadventurer/842f1a10762cba0ce27dc8f99a835377)
