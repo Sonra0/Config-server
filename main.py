@@ -104,7 +104,7 @@ if __name__ == '__main__':
             run_process = subprocess.run(['bash', "change-ssh-port.sh"])
         if num == 6 :
             takessl()
-        if num == 7 :
+        if num == 8 :
             backup()
         if num == 0:
             break
