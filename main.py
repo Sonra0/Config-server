@@ -2,7 +2,7 @@ import subprocess
 import sys
 from ufwset import ufwrun
 from ssl import takessl
-from backup_xui import backup
+from backup_xui import backup_do
 def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
@@ -105,6 +105,6 @@ if __name__ == '__main__':
         if num == 6 :
             takessl()
         if num == 8 :
-            backup()
+            backup_do()
         if num == 0:
             break
