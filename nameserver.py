@@ -27,4 +27,4 @@ def dns():
         file.close()
         print("DNS sets successfully")
     else :
-        continue
+        return 0
