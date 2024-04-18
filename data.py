@@ -1,4 +1,4 @@
-print("\nCreate a bot in BotFather:",end="")
+print("\n( Create a bot in BotFather )",end="")
 print("\nEnter your telegram bot token :",end="")
 token = input()
 print("\nEnter your telegram number id ( you can searh about how to get it ) :",end="")
