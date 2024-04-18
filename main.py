@@ -17,7 +17,7 @@ if __name__ == '__main__':
         print("5. Change SSH port")
         print("6. SSL certificate")
         print("7. Iran firewall")
-        print("8. Backup")
+        print("8. X-UI Backup")
         print("9. Change NameServer")
         print("0. Exit")
         print("\nEnter your number:",end=" ")
