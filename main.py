@@ -5,7 +5,6 @@ from ssl import takessl
 from backup_xui import backup_do
 from firewall_iran import firewall
 from nameserver import dns
-from Gost_private_ip import Private_ip
 def chisel():
     from Chisel_multipleServers import chisel
 if __name__ == '__main__':
