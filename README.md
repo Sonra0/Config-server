@@ -65,6 +65,8 @@ cd /root/Config-server/ && python3 main.py
 
 - Backup your x-ui database and send it to your telegram bot
 
+- Change nameserver
+
 ## I used below repositories in my script :
 * [Alireza panel](https://github.com/alireza0/x-ui)
 * [Rathole](https://github.com/Azumi67/Rathole_reverseTunnel)
