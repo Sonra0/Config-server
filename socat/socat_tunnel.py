@@ -15,15 +15,7 @@ def socat_run():
     f = open("/usr/lib/systemd/system/socat.service",'w')
     f.write("####\n[Unit]\nDescription=Socat tunnel for network daemons\nAfter=network.target\nAfter=syslog.target\n\n[Install]\nWantedBy=multi-user.target\nAlias=socat.target\n\n[Service]\nType=forking\nExecStart=/usr/bin/socat TCP4-LISTEN:"+port+" TCP4:"+ip+":"+port+"\nExecStop=/usr/bin/pkill socat\n\nTimeoutSec=600\nRestart=always\nPrivateTmp=false\n#####")
     f.close()
-    subprocess.run(["systemctl", 'reload', 'socat.service'])
-    restart = subprocess.run(["systemctl", 'restart', 'socat.service'])
-    if restart.returncode == 0 :
-        print("socat restarted")
-    else:
-        print("unable to restart socat")
-    enable = subprocess.run(["systemctl", 'enable', 'socat.service'])
-    if enable.returncode == 0 :
-        print("socat enabled")
-    else:
-        print("unable to start socat")
+    subprocess.run(["systemctl", 'enable', 'socat.service'])
+    restart = subprocess.run(["systemctl", 'start', 'socat.service'])
+    enable = subprocess.run(["systemctl", 'rester', 'socat.service'])
 socat_run()
