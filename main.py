@@ -5,7 +5,7 @@ from ssl import takessl
 from backup_xui import backup_do
 from firewall_iran import firewall
 from nameserver import dns
-
+from socat import socat_tunnel
 
 def chisel():
     from Chisel_multipleServers import chisel  # noqa
@@ -126,6 +126,7 @@ if __name__ == '__main__':
             print("\n1. Rathole")
             print("2. Chisel")
             print("3. Gost + PrivateIP")
+            print("4. Socat")
             print("0. Exit")
             print("\nEnter your number:", end=" ")
             num2 = int(input())
@@ -155,6 +156,8 @@ if __name__ == '__main__':
                     run_gost()
                 if num3 == 0:
                     continue
+            if num2 == 4:
+                socat_run()
             if num2 == 0:
                 continue
         if num == 3:
