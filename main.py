@@ -76,10 +76,10 @@ if __name__ == '__main__':
             if num2 == 2 :
                 chisel()
             if num2 == 3:
-                print("1. PrivateIP")
+                print("\n1. PrivateIP")
                 print("2. Gost")
                 print("0. Exit")
-                print("Enter your number: ",end='')
+                print("\nEnter your number: ",end='')
                 num3 = int(input())
                 if num3 == 1 :
                     chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh'], capture_output=True,text=True)
@@ -88,6 +88,13 @@ if __name__ == '__main__':
                     else:
                         print("\nchmod failed\n")
                     run_process = subprocess.run(['bash', "/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh"])
+                if num3 == 2 :
+                    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/Gost-ip6/Gost.sh'], capture_output=True,text=True)
+                    if chmod_process.returncode == 0:
+                        print("\nchmod successful.\n")
+                    else:
+                        print("\nchmod failed\n")
+                    run_process = subprocess.run(['bash', "/root/Config-server/Gost-ip6/Gost.sh"])
                 if num3 == 0 :
                     continue
             if num2 == 0 :
