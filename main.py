@@ -157,7 +157,7 @@ if __name__ == '__main__':
                 if num3 == 0:
                     continue
             if num2 == 4:
-
+                socat_run2()
             if num2 == 0:
                 continue
         if num == 3:
