@@ -8,7 +8,8 @@ from nameserver import dns
 from socat import socat_tunnel
 def chisel():
     from Chisel_multipleServers import chisel  # noqa
-
+def socat_run2():
+    from socat_tunnel import socat_run
 
 def hawshemi():
     chmod_process = subprocess.run(["chmod", '+x', '/Linux-Optimizer/linux-optimizer.sh', ], capture_output=True,
@@ -156,7 +157,7 @@ if __name__ == '__main__':
                 if num3 == 0:
                     continue
             if num2 == 4:
-                from socat_tunnel import socat_run
+                socat_run2()
             if num2 == 0:
                 continue
         if num == 3:
