@@ -7,9 +7,6 @@ from firewall_iran import firewall
 from nameserver import dns
 def chisel():
     from Chisel_multipleServers import chisel  # noqa
-def socat_run2():
-    from socat import socat_tunnel
-    from socat_tunnel import socat_run
 
 def hawshemi():
     chmod_process = subprocess.run(["chmod", '+x', '/Linux-Optimizer/linux-optimizer.sh', ], capture_output=True,
@@ -125,8 +122,7 @@ if __name__ == '__main__':
         if num == 2:
             print("\n1. Rathole")
             print("2. Chisel")
-            print("3. Gost + PrivateIP")
-            print("4. Socat")
+            print("3. Gost ")
             print("0. Exit")
             print("\nEnter your number:", end=" ")
             num2 = int(input())
@@ -145,19 +141,7 @@ if __name__ == '__main__':
             if num2 == 2:
                 chisel()
             if num2 == 3:
-                print("\n1. PrivateIP")
-                print("2. Gost")
-                print("0. Exit")
-                print("\nEnter your number: ", end='')
-                num3 = int(input())
-                if num3 == 1:
-                    run_private()
-                if num3 == 2:
-                    run_gost()
-                if num3 == 0:
-                    continue
-            if num2 == 4:
-                socat_run2()
+                run_gost()
             if num2 == 0:
                 continue
         if num == 3:
