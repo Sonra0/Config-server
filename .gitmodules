@@ -16,3 +16,9 @@
 [submodule "x-ui"]
 	path = x-ui
 	url = https://github.com/alireza0/x-ui.git
+[submodule "PrivateIP_TCP-UDP_Tunnel"]
+	path = PrivateIP_TCP-UDP_Tunnel
+	url = https://github.com/Azumi67/PrivateIP_TCP-UDP_Tunnel.git
+[submodule "Gost-ip6"]
+	path = Gost-ip6
+	url = https://github.com/masoudgb/Gost-ip6.git

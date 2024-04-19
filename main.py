@@ -47,6 +47,7 @@ if __name__ == '__main__':
         if num == 2 :
             print("\n1. Rathole")
             print("2. Chisel")
+            print("3. Gost + PrivateIP")
             print("0. Exit")
             print("\nEnter your number:", end=" ")
             num2 = int(input())
@@ -74,6 +75,28 @@ if __name__ == '__main__':
                     continue
             if num2 == 2 :
                 chisel()
+            if num2 == 3:
+                print("\n1. PrivateIP")
+                print("2. Gost")
+                print("0. Exit")
+                print("\nEnter your number: ",end='')
+                num3 = int(input())
+                if num3 == 1 :
+                    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh'], capture_output=True,text=True)
+                    if chmod_process.returncode == 0:
+                        print("\nchmod successful.\n")
+                    else:
+                        print("\nchmod failed\n")
+                    run_process = subprocess.run(['bash', "/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh"])
+                if num3 == 2 :
+                    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/Gost-ip6/Gost.sh'], capture_output=True,text=True)
+                    if chmod_process.returncode == 0:
+                        print("\nchmod successful.\n")
+                    else:
+                        print("\nchmod failed\n")
+                    run_process = subprocess.run(['bash', "/root/Config-server/Gost-ip6/Gost.sh"])
+                if num3 == 0 :
+                    continue
             if num2 == 0 :
                 continue
         if num == 3 :
