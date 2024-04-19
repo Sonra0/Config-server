@@ -75,3 +75,5 @@ cd /root/Config-server/ && python3 main.py
 * [sanaei panel](https://github.com/MHSanaei/3x-ui)
 * [OPIRAN linux optimizer](https://github.com/opiran-club/VPS-Optimizer/tree/4f2d14d0b2fc62af2b8d63e57e5c6a428f76ea89)
 * [hawshemi linux optimizer](https://github.com/hawshemi/Linux-Optimizer)
+* [Gost-ip6](https://github.com/masoudgb/Gost-ip6)
+* [Private-ip](https://github.com/Azumi67/PrivateIP_TCP-UDP_Tunnel)
