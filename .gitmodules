@@ -22,3 +22,6 @@
 [submodule "Gost-ip6"]
 	path = Gost-ip6
 	url = https://github.com/masoudgb/Gost-ip6.git
+[submodule "6TO4-GRE-IPIP-SIT"]
+	path = 6TO4-GRE-IPIP-SIT
+	url = https://github.com/Azumi67/6TO4-GRE-IPIP-SIT.git
