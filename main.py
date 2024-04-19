@@ -6,7 +6,6 @@ from backup_xui import backup_do
 from firewall_iran import firewall
 from nameserver import dns
 from socat import socat_tunnel
-from socat_tunnel import socat_run
 def chisel():
     from Chisel_multipleServers import chisel  # noqa
 
@@ -157,7 +156,7 @@ if __name__ == '__main__':
                 if num3 == 0:
                     continue
             if num2 == 4:
-                socat_run()
+                from socat_tunnel import socat_run
             if num2 == 0:
                 continue
         if num == 3:
