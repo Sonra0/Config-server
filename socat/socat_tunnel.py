@@ -25,3 +25,4 @@ def socat_run():
         print("socat enabled")
     else:
         print("unable to start socat")
+socat_run()
