@@ -5,7 +5,7 @@ from ssl import takessl
 from backup_xui import backup_do
 from firewall_iran import firewall
 from nameserver import dns
-from socat import socat_tunnel
+from socat import socat_run
 
 def chisel():
     from Chisel_multipleServers import chisel  # noqa
