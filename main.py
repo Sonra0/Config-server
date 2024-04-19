@@ -5,6 +5,15 @@ from ssl import takessl
 from backup_xui import backup_do
 from firewall_iran import firewall
 from nameserver import dns
+
+def other_tunnel():
+    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/6TO4-GRE-IPIP-SIT/ipipv2.py', ], capture_output=True,
+                                   text=True)
+    if chmod_process.returncode == 0:
+        print("\nChmod successful.\n")
+    else:
+        print("\nChmod failed\n")
+    run_process = subprocess.run(['python3', "/root/Config-server/6TO4-GRE-IPIP-SIT/ipipv2.py"])
 def chisel():
     from Chisel_multipleServers import chisel  # noqa
 
@@ -123,6 +132,7 @@ if __name__ == '__main__':
             print("\n1. Rathole")
             print("2. Chisel")
             print("3. Gost ")
+            print("4. Other tunnels")
             print("0. Exit")
             print("\nEnter your number:", end=" ")
             num2 = int(input())
@@ -142,6 +152,8 @@ if __name__ == '__main__':
                 chisel()
             if num2 == 3:
                 run_gost()
+            if num2 == 4:
+                other_tunnel()
             if num2 == 0:
                 continue
         if num == 3:
