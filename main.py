@@ -7,6 +7,69 @@ from firewall_iran import firewall
 from nameserver import dns
 def chisel():
     from Chisel_multipleServers import chisel
+def hawshemi():
+    chmod_process = subprocess.run(["chmod", '+x', '/Linux-Optimizer/linux-optimizer.sh', ], capture_output=True,
+                                   text=True)
+    if chmod_process.returncode == 0:
+        print("\nChmod successful.\n")
+    else:
+        print("\nChmod failed\n")
+    run_process = subprocess.run(['bash', "./Linux-Optimizer/linux-optimizer.sh"])
+def op_iran():
+    chmod_process = subprocess.run(["chmod", '+x', '/VPS-Optimizer/optimizer.sh'], capture_output=True, text=True)
+    if chmod_process.returncode == 0:
+        print("\nChmod successful.\n")
+    else:
+        print("\nChmod failed\n")
+    run_process = subprocess.run(['bash', "./VPS-Optimizer/optimizer.sh"])
+def rathole_compile():
+    chmod_process = subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/install.sh'], capture_output=True, text=True)
+    if chmod_process.returncode == 0:
+        print("\nchmod successful.\n")
+    else:
+        print("\nchmod failed\n")
+    run_process = subprocess.run(['bash', "./Rathole_reverseTunnel/install.sh"])
+def rathole_install():
+    chmod_process = subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/go.sh'], capture_output=True, text=True)
+    if chmod_process.returncode == 0:
+        print("\nchmod successful.\n")
+    else:
+        print("\nchmod failed\n")
+    run_process = subprocess.run(['bash', "./Rathole_reverseTunnel/go.sh"])
+def run_private():
+    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh'],capture_output=True, text=True)
+    if chmod_process.returncode == 0:
+        print("\nchmod successful.\n")
+    else:
+        print("\nchmod failed\n")
+    run_process = subprocess.run(['bash', "/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh"])
+def run_gost():
+    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/Gost-ip6/Gost.sh'], capture_output=True,text=True)
+    if chmod_process.returncode == 0:
+        print("\nchmod successful.\n")
+    else:
+        print("\nchmod failed\n")
+    run_process = subprocess.run(['bash', "/root/Config-server/Gost-ip6/Gost.sh"])
+def install_mh():
+    print("enter your version:( example: 2.2.1 ):", end=' ')
+    version = 'v' + input()
+    chmod_process = subprocess.run(["chmod", '+x', './3x-ui/install.sh'], capture_output=True, text=True)
+    if chmod_process.returncode == 0:
+        print("\nchmod successful.\n")
+    else:
+        print("\nchmod failed\n")
+    run_process = subprocess.run(['bash', "./3x-ui/install.sh", version])
+def install_alireza():
+    print("enter your version:( example: 2.2.1 ):", end=' ')
+    version = input()
+    run_process = subprocess.run(['bash', "./x-ui/install.sh", version])
+def change_ssh():
+    chmod_process = subprocess.run(["chmod", '+x', 'change-ssh-port.sh'], capture_output=True, text=True)
+    if chmod_process.returncode == 0:
+        print("\nchmod successful.\n")
+    else:
+        print("\nchmod failed\n")
+    run_process = subprocess.run(['bash', "change-ssh-port.sh"])
 if __name__ == '__main__':
     while True :
         subprocess.run(['curl', "-s","https://raw.githubusercontent.com/shinya/pokemon-terminal-art/main/256color/silver/001.txt"])
@@ -28,20 +91,10 @@ if __name__ == '__main__':
             print("0. Exit")
             print("\nEnter your number:",end=" ")
             num2 = int(input())
-            if num2 == 1 :
-                chmod_process = subprocess.run(["chmod", '+x', '/Linux-Optimizer/linux-optimizer.sh',],capture_output=True, text=True)
-                if chmod_process.returncode == 0:
-                    print("\nChmod successful.\n")
-                else:
-                    print("\nChmod failed\n")
-                run_process = subprocess.run(['bash',"./Linux-Optimizer/linux-optimizer.sh"])
+            if num2 == 1:
+                hawshemi()
             if num2 == 2:
-                chmod_process = subprocess.run(["chmod", '+x', '/VPS-Optimizer/optimizer.sh'],capture_output=True, text=True)
-                if chmod_process.returncode == 0:
-                    print("\nChmod successful.\n")
-                else:
-                    print("\nChmod failed\n")
-                run_process = subprocess.run(['bash', "./VPS-Optimizer/optimizer.sh"])
+                op_iran()
             if num2 == 0:
                 continue
         if num == 2 :
@@ -58,19 +111,9 @@ if __name__ == '__main__':
                 print("\nEnter your number:",end=" ")
                 num3=int(input())
                 if num3 == 1 :
-                    chmod_process = subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/install.sh'],capture_output=True, text=True)
-                    if chmod_process.returncode == 0:
-                        print("\nchmod successful.\n")
-                    else:
-                        print("\nchmod failed\n")
-                    run_process = subprocess.run(['bash', "./Rathole_reverseTunnel/install.sh"])
+                    rathole_compile()
                 if num3 == 2 :
-                    chmod_process = subprocess.run(["chmod", '+x', '/Rathole_reverseTunnel/go.sh'],capture_output=True, text=True)
-                    if chmod_process.returncode == 0:
-                        print("\nchmod successful.\n")
-                    else:
-                        print("\nchmod failed\n")
-                    run_process = subprocess.run(['bash', "./Rathole_reverseTunnel/go.sh"])
+                    rathole_install()
                 if num3 == 0 :
                     continue
             if num2 == 2 :
@@ -82,19 +125,9 @@ if __name__ == '__main__':
                 print("\nEnter your number: ",end='')
                 num3 = int(input())
                 if num3 == 1 :
-                    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh'], capture_output=True,text=True)
-                    if chmod_process.returncode == 0:
-                        print("\nchmod successful.\n")
-                    else:
-                        print("\nchmod failed\n")
-                    run_process = subprocess.run(['bash', "/root/Config-server/PrivateIP_TCP-UDP_Tunnel/Private.sh"])
+                    run_private()
                 if num3 == 2 :
-                    chmod_process = subprocess.run(["chmod", '+x', '/root/Config-server/Gost-ip6/Gost.sh'], capture_output=True,text=True)
-                    if chmod_process.returncode == 0:
-                        print("\nchmod successful.\n")
-                    else:
-                        print("\nchmod failed\n")
-                    run_process = subprocess.run(['bash', "/root/Config-server/Gost-ip6/Gost.sh"])
+                    run_gost()
                 if num3 == 0 :
                     continue
             if num2 == 0 :
@@ -106,29 +139,15 @@ if __name__ == '__main__':
             print("\nEnter your number:",end=" ")
             num2 = int(input())
             if num2 == 1 :
-                print("enter your version:( example: 2.2.1 ):",end=' ')
-                version = 'v'+input()
-                chmod_process = subprocess.run(["chmod", '+x', './3x-ui/install.sh'], capture_output=True,text=True)
-                if chmod_process.returncode == 0:
-                    print("\nchmod successful.\n")
-                else:
-                    print("\nchmod failed\n")
-                run_process = subprocess.run(['bash', "./3x-ui/install.sh",version ])
+                install_mh()
             if num2 == 2 :
-                print("enter your version:( example: 2.2.1 ):", end=' ')
-                version = input()
-                run_process = subprocess.run(['bash',"./x-ui/install.sh" , version])
+                install_alireza()
             if num2 == 0 :
                 continue
         if num == 4 :
             ufwrun()
         if num == 5 :
-            chmod_process = subprocess.run(["chmod", '+x', 'change-ssh-port.sh'], capture_output=True, text=True)
-            if chmod_process.returncode == 0:
-                print("\nchmod successful.\n")
-            else:
-                print("\nchmod failed\n")
-            run_process = subprocess.run(['bash', "change-ssh-port.sh"])
+            change_ssh()
         if num == 6 :
             takessl()
         if num == 7 :
