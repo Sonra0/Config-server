@@ -9,7 +9,7 @@ def socat_run():
     else:
         print("unable to install socat")
     print("\nEnter your port:",end="")
-    port = int(input())
+    port = input()
     print("\nEnter your des ip :", end="")
     ip = input()
     f = open("/usr/lib/systemd/system/socat.service",'w')
