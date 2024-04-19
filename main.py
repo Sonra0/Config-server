@@ -132,7 +132,7 @@ if __name__ == '__main__':
             print("\n1. Rathole")
             print("2. Chisel")
             print("3. Gost ")
-            print("4. Other tunnels")
+            print("4. other tunnels")
             print("0. Exit")
             print("\nEnter your number:", end=" ")
             num2 = int(input())
