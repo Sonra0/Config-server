@@ -16,3 +16,6 @@
 [submodule "x-ui"]
 	path = x-ui
 	url = https://github.com/alireza0/x-ui.git
+[submodule "PrivateIP_TCP-UDP_Tunnel"]
+	path = PrivateIP_TCP-UDP_Tunnel
+	url = https://github.com/Azumi67/PrivateIP_TCP-UDP_Tunnel.git
