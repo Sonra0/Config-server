@@ -1,5 +1,5 @@
 # Config your server
-# This project is not updating/it was just a practice and I will be back soon!
+# This project is not updating/it was just a practice and I'll back soon!
 
 You can have many packages to optimize your linux server and config vpn tunnel and tools. 
 
